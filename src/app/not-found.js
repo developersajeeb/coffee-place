@@ -1,5 +1,9 @@
+'use client'
+
+import Lottie from 'lottie-react'
 import Link from 'next/link';
 import React from 'react';
+import notFound from '../../public/others/404.json'
 
 const NotFound = () => {
     return (
@@ -23,7 +27,7 @@ const NotFound = () => {
                 </div>
 
                 <div className="mt-10 md:mt-0">
-                    <img src="https://merakiui.com/images/components/illustration.svg" alt=""></img>
+                    <Lottie animationData={notFound} loop={true} ></Lottie>
                 </div>
             </div>
         </section>
