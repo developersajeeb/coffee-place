@@ -1,113 +1,97 @@
-import Image from 'next/image'
+import React from 'react';
+import Banner from './components/Banner/Banner';
+import Image from 'next/image';
+import Services from './components/Services/Services';
+import PopularCoffee from './components/PopularCoffee/PopularCoffee';
+import ThreeBlog from './components/ThreeBlog/ThreeBlog';
 
-export default function Home() {
+const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Banner></Banner>
+      <section className='px-5 py-16 md:px-32 md:py-28 bg-color-second text-white'>
+        <div className='grid md:grid-cols-2'>
+          <div className='w-full md:w-3/4'>
+            <p className='text-color'>ABOUT US</p>
+            <h2 className='text-4xl my-5 font-semibold'>Organic & Fresh Coffee Provider Center</h2>
+            <p className='text-gray-400'>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p>
+            <div className='mt-8 flex items-center gap-4 text-xl bg-color p-5 rounded-md'>
+              <Image src='/others/sajeeb.jpg' alt='Sajeeb' width={100} height={100} className='rounded-full'></Image>
+              <h4>Quis autem vel eum iure reprehenderit in ealuptate velit esse molestiae</h4>
+            </div>
+          </div>
+          <div className='mt-10 md:mt-0'>
+            <Image src='/others/about_img.png' alt='About Image' width={600} height={600}></Image>
+          </div>
         </div>
-      </div>
+        <Services></Services>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section style={{ backgroundImage: 'url(/others/category_bg.jpg)' }} className='px-5 py-16 md:px-32 md:py-28 bg-cover bg-center bg-fixed'>
+        <PopularCoffee></PopularCoffee>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section style={{ backgroundImage: 'url(/others/parallax_icon1.png), url(/others/parallax_icon2.png), url(/others/parallax_icon3.png)', backgroundPosition: 'left top 80px, right top 120px, right bottom 50px', backgroundSize: '150px, 120px, 200px' }} className='px-5 py-16 md:px-32 md:py-28 bg-black bg-no-repeat'>
+        <div className='grid md:grid-cols-2 items-center gap-10 md:gap-28'>
+          <Image src='/others/choose_img.jpg' width={200} height={100} alt='Choose Us' className='w-full h-full object-cover'></Image>
+          <div className='text-white'>
+            <p className='text-color'>WHY CHOOSE US</p>
+            <h2 className='text-4xl my-5 font-semibold'>New London Coffee Founded For Extraordinary Test</h2>
+            <p className='text-gray-400'>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae abillo inventore veritatis</p>
+            <ul className='my-10'>
+              <li className='flex items-center gap-6 mb-6'>
+                <Image src='/others/choose_icon1.png' width={80} height={100} alt='choose icon'></Image>
+                <div>
+                  <h3 className='text-xl'>Natural Coffee Beans</h3>
+                  <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+                </div>
+              </li>
+              <li className='flex items-center gap-6'>
+                <Image src='/others/choose_icon2.png' width={80} height={100} alt='choose icon'></Image>
+                <div>
+                  <h3 className='text-xl'>100% ISO Certification</h3>
+                  <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+                </div>
+              </li>
+            </ul>
+            <button class="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-mono font-medium tracking-tighter text-white bg-[#B99272] rounded-md group hover:text-[#B99272] duration-300">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
+              <span class="relative text-sm uppercase">Explore More</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className='bg-color-second px-5 py-16 md:px-32 md:py-20 grid md:grid-cols-3 gap-12'>
+        <div className='text-white text-center md:text-start md:flex items-center gap-6'>
+          <h2 className='text-color text-6xl'>256+</h2>
+          <div className='mt-4 md:mt-0'>
+            <h3 className='text-xl'>Premium Clients</h3>
+            <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde</p>
+          </div>
+        </div>
+        <div className='text-white text-center md:text-start md:flex items-center gap-6'>
+          <h2 className='text-color text-6xl'>362+</h2>
+          <div className='mt-4 md:mt-0'>
+            <h3 className='text-xl'>Expert Members</h3>
+            <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde</p>
+          </div>
+        </div>
+        <div className='text-white text-center md:text-start md:flex items-center gap-6 '>
+          <h2 className='text-color text-6xl'>753+</h2>
+          <div className='mt-4 md:mt-0'>
+            <h3 className='text-xl'>Winning Awards</h3>
+            <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde</p>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+      <section className='px-5 py-16 md:px-32 md:py-28 bg-black'>
+        <ThreeBlog></ThreeBlog>
+      </section>
+    </>
+  );
+};
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default page;
