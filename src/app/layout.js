@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import './globals.css'
@@ -13,6 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Your Site Title</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <body className={inter.className}>
         <Navbar></Navbar>
         {children}
