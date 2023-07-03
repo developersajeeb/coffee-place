@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className='bg-[#0E1317]'>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 md:px-16 lg:px-0">
                 <Link href='/'>
-                    <Image src='/logo.png' alt='Coffee Place' width={75} height={75} />
+                    <Image src='/logo.png' alt='Coffee Place' width={80} height={80} />
                 </Link>
                 <button data-collapse-toggle="navbar-default" type="button" className="z-20 inline-flex items-center ml-3 text-sm text-white rounded-lg md:hidden" aria-controls="navbar-default" aria-expanded="false" onClick={() => { setOpen(!isOpen) }}>
                     <Hamburger size={25}></Hamburger>
