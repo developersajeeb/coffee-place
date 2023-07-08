@@ -1,10 +1,11 @@
-import Image from 'next/image';
 import React from 'react';
+import Lottie from 'lottie-react';
+import loading from '../../../../public/others/';
 
 const Loader = () => {
     return (
         <section>
-            <Image src='/public/others/65721-coffeetea.gif' alt='' width={400} height={400}/>
+            <Lottie animationData={loading} loop={true}/>
         </section>
     );
 };

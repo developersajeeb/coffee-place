@@ -1,10 +1,18 @@
+'use client'
+
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaLocationArrow, FaRegEnvelope, FaPhoneAlt } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
-        <footer>
+        <footer data-aos="fade-up">
             <section style={{ backgroundImage: 'url(/others/choose_img.jpg)' }} className='bg-cover bg-center bg-no-repeat bg-fixed'>
                 <div className='text-white px-5 py-16 md:px-32 md:py-16 bg-[#0000009a] md:flex items-center justify-between'>
                     <div>

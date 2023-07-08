@@ -1,7 +1,15 @@
+'use client'
+
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PopularCoffee = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     const popularMenu = [
         {
             image: 'https://kaffen-reactjs.netlify.app/images/menu1.jpg',
@@ -43,13 +51,13 @@ const PopularCoffee = () => {
 
     return (
         <div>
-            <div className='text-center text-white'>
+            <div className='text-center text-white' data-aos="zoom-in">
                 <p className='text-color'>CHOOSE BEST COFFEE</p>
                 <h2 className='text-4xl my-5 font-semibold'>Coffee Place Popular Coffee Menu</h2>
             </div>
             <div style={{ backgroundImage: `url(${'/others/menu_logo.png'})` }} className='bg-center bg-contain bg-no-repeat bg-[#090C0F] grid md:grid-cols-2 gap-10 p-10 mt-16'>
                 {
-                    popularMenu?.map((menu, index) => <div key={index} className='md:flex gap-5 items-center'>
+                    popularMenu?.map((menu, index) => <div key={index} className='md:flex gap-5 items-center' data-aos="flip-up" data-aos-delay='100'>
                         <Image src={menu.image} alt='Menu Image' width={150} height={200} className='w-full md:w-36 h-40 object-cover rounded-md'></Image>
                         <div className='text-white mt-6 md:mt-0'>
                             <h3 className='text-xl'>{menu.title}</h3>

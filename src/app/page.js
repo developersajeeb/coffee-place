@@ -1,26 +1,35 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect } from 'react';
 import Banner from './components/Banner/Banner';
 import Image from 'next/image';
 import Services from './components/Services/Services';
 import PopularCoffee from './components/PopularCoffee/PopularCoffee';
 import ThreeBlog from './components/ThreeBlog/ThreeBlog';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const page = () => {
+const Page = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Banner></Banner>
       <section className='px-5 py-16 md:px-32 md:py-28 bg-color-second text-white'>
         <div className='grid md:grid-cols-2'>
           <div className='w-full md:w-3/4'>
-            <p className='text-color'>ABOUT US</p>
-            <h2 className='text-4xl my-5 font-semibold'>Organic & Fresh Coffee Provider Center</h2>
-            <p className='text-gray-400'>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p>
-            <div className='mt-8 flex items-center gap-4 text-xl bg-color p-5 rounded-md'>
+            <p className='text-color' data-aos="fade-right">ABOUT US</p>
+            <h2 className='text-4xl my-5 font-semibold' data-aos="fade-right">Organic & Fresh Coffee Provider Center</h2>
+            <p className='text-gray-400' data-aos="fade-right" data-aos-delay="100">Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione</p>
+            <div className='mt-8 flex items-center gap-4 text-xl bg-color p-5 rounded-md' data-aos="flip-up" data-aos-delay="200">
               <Image src='/others/sajeeb.jpg' alt='Sajeeb' width={100} height={100} className='rounded-full'></Image>
               <h4>Quis autem vel eum iure reprehenderit in ealuptate velit esse molestiae</h4>
             </div>
           </div>
-          <div className='mt-10 md:mt-0'>
+          <div className='mt-10 md:mt-0' data-aos="fade-left">
             <Image src='/others/about_img.png' alt='About Image' width={600} height={600}></Image>
           </div>
         </div>
@@ -94,4 +103,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
