@@ -67,7 +67,7 @@ const About = () => {
               </div>
             </div>
             <div className='hover:-mt-4 duration-300'>
-              <div className='bg-black p-6 text-center mb-12 lg:mb-0 hover:-mt-4 duration-300' data-aos="flip-up" data-aos-delay="200">
+              <div className='bg-black p-6 text-center mb-12 lg:mb-0' data-aos="flip-up" data-aos-delay="200">
                 <h4>Kenny V. Gonzalez</h4>
                 <p className='text-sm text-color mb-6 mt-2'>Senior Chefs</p>
                 <Image src='/team/team2.jpg' alt='Team Image' width={200} height={100} className='rounded-md w-full -mb-14'></Image>
