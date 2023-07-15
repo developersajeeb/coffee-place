@@ -1,10 +1,14 @@
-import React from 'react';
+"use client"
+import Lottie from 'lottie-react';
+import loadingAni from '../../public/others/Loading.json';
 
 const loading = () => {
     return (
-        <div>
-            <h1 className='text-9xl'>Loading ...</h1>
-        </div>
+        <section className='h-screen w-screen flex justify-center items-center'>
+            <div className='w-60'>
+                <Lottie animationData={loadingAni} loop={true}/>
+            </div>
+        </section>
     );
 };
 

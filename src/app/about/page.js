@@ -1,12 +1,20 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect } from 'react';
 import Header from '../components/Header/Header';
 import Image from 'next/image';
 import TotalService from '../components/TotalService/TotalService';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
-      <Header></Header>
+      <Header title={'About Us'}></Header>
       <main className='text-white bg-color-second'>
         <section className='px-5 py-16 md:px-32 md:py-28'>
           <div className='grid md:grid-cols-2 items-center gap-10 md:gap-28'>
@@ -44,8 +52,63 @@ const About = () => {
           <TotalService></TotalService>
         </section>
 
-        <section className='py-16 md:px-32 md:py-28'>
-          
+        <section className='py-16 px-5 md:px-32 md:pt-28 md:pb-40'>
+          <div className='text-center text-white mb-16' data-aos="zoom-in">
+            <p className='text-color'>EXPERIENCE TEAM MEMBER</p>
+            <h2 className='text-4xl my-5 font-semibold'>Meet Our Professional Chefs</h2>
+          </div>
+
+          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='hover:-mt-4 duration-300'>
+              <div className='bg-black p-6 text-center mb-12 lg:mb-0 ' data-aos="flip-up" data-aos-delay="100">
+                <h4>Anthony J. Bowman</h4>
+                <p className='text-sm text-color mb-6 mt-2'>Senior Chefs</p>
+                <Image src='/team/team1.jpg' alt='Team Image' width={200} height={100} className='rounded-md w-full -mb-14'></Image>
+              </div>
+            </div>
+            <div className='hover:-mt-4 duration-300'>
+              <div className='bg-black p-6 text-center mb-12 lg:mb-0 hover:-mt-4 duration-300' data-aos="flip-up" data-aos-delay="200">
+                <h4>Kenny V. Gonzalez</h4>
+                <p className='text-sm text-color mb-6 mt-2'>Senior Chefs</p>
+                <Image src='/team/team2.jpg' alt='Team Image' width={200} height={100} className='rounded-md w-full -mb-14'></Image>
+              </div>
+            </div>
+            <div className='hover:-mt-4 duration-300'>
+              <div className='bg-black p-6 text-center mb-12 lg:mb-0' data-aos="flip-up" data-aos-delay="300">
+                <h4>Joseph M. Lawrence</h4>
+                <p className='text-sm text-color mb-6 mt-2'>Senior Chefs</p>
+                <Image src='/team/team3.jpg' alt='Team Image' width={200} height={100} className='rounded-md w-full -mb-14'></Image>
+              </div>
+            </div>
+            <div className='hover:-mt-4 duration-300'>
+              <div className='bg-black p-6 text-center mb-12 lg:mb-0' data-aos="flip-up" data-aos-delay="400">
+                <h4>Charles K. Smith</h4>
+                <p className='text-sm text-color mb-6 mt-2'>Senior Chefs</p>
+                <Image src='/team/team4.jpg' alt='Team Image' width={200} height={100} className='rounded-md w-full -mb-14'></Image>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='py-16 px-5 md:px-32 md:py-28 bg-black flex justify-between flex-wrap items-center gap-8'>
+          <div className='w-32 mx-auto' data-aos="zoom-in-up" data-aos-delay="100">
+            <Image src='/brand/brand1.png' alt='Brand image' width={180} height={180}/>
+          </div>
+          <div className='w-32 mx-auto'data-aos="zoom-in-up" data-aos-delay="200">
+            <Image src='/brand/brand2.png' alt='Brand image' width={180} height={180}/>
+          </div>
+          <div className='w-32 mx-auto' data-aos="zoom-in-up" data-aos-delay="300">
+            <Image src='/brand/brand3.png' alt='Brand image' width={180} height={180}/>
+          </div>
+          <div className='w-32 mx-auto' data-aos="zoom-in-up" data-aos-delay="400">
+            <Image src='/brand/brand4.png' alt='Brand image' width={180} height={180}/>
+          </div>
+          <div className='w-32 mx-auto' data-aos="zoom-in-up" data-aos-delay="500">
+            <Image src='/brand/brand5.png' alt='Brand image' width={180} height={180}/>
+          </div>
+          <div className='w-32 mx-auto' data-aos="zoom-in-up" data-aos-delay="600">
+            <Image src='/brand/brand6.png' alt='Brand image' width={180} height={180}/>
+          </div>
         </section>
       </main>
     </>
