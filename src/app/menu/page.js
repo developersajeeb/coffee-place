@@ -1,3 +1,6 @@
+import Brand from '../components/Brand/Brand';
+import CoffeeTab from '../components/CoffeeTab/CoffeeTab';
+import Form from '../components/Form/Form';
 import Header from '../components/Header/Header';
 
 const Menu = () => {
@@ -11,9 +14,17 @@ const Menu = () => {
                         <h2 className='text-4xl my-5 font-semibold'>Coffee Place Menu</h2>
                     </div>
                     <div>
-                        
+                        <CoffeeTab></CoffeeTab>
                     </div>
                 </section>
+
+                <section className='px-5 md:px-32 bg-cover bg-center bg-fixed' style={{ backgroundImage: 'url(/others/contactBG.jpg)' }}>
+                    <Form></Form>
+                </section>
+
+                <>
+                    <Brand></Brand>
+                </>
             </main>
         </>
     );
