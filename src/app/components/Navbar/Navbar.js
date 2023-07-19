@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <nav className='bg-[#0E1317]'>
+        <nav className='bg-color-second'>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 md:px-16 lg:px-0">
                 <Link href='/'>
                     <Image src='/logo.png' alt='Coffee Place' width={80} height={80} />

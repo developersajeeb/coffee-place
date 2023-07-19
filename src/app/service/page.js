@@ -1,9 +1,104 @@
 import React from 'react';
+import Header from '../components/Header/Header';
+import Services from '../components/Services/Services';
+import { FaCookie, FaCarrot, FaHamburger, FaFish, FaPizzaSlice, FaGlassCheers, FaMugHot, FaSeedling } from "react-icons/fa";
 
 const Service = () => {
     return (
         <>
-         <h1>Service</h1>   
+            <Header title={'Services'}></Header>
+            <main className='text-white bg-color-second'>
+                <section className='px-5 py-16 md:px-32 md:py-28'>
+                    <div className='text-center text-white' data-aos="zoom-in">
+                        <p className='text-color'>WE PROVIDE</p>
+                        <h2 className='text-4xl my-5 font-semibold'>Coffee Place Services One</h2>
+                    </div>
+                    <div className='-mt-12'>
+                        <Services></Services>
+                    </div>
+                </section>
+
+                <section className='px-5 py-16 md:px-32 md:py-28 bg-black'>
+                    <div className='text-center text-white mb-16' data-aos="zoom-in">
+                        <p className='text-color'>WHAT WE DO</p>
+                        <h2 className='text-4xl my-5 font-semibold'>Coffee Place Services Two</h2>
+                    </div>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-30'>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaCookie size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Birthday Cakes</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="200">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaCarrot size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Fresh Food</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="300">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaHamburger size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Fast Food</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaFish size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Sea Food</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaPizzaSlice size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Pizza</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaGlassCheers size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Drinks</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaMugHot size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Coffee</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
+                                    <FaSeedling size={45} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Vegetables</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </>
     );
 };

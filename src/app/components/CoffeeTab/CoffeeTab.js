@@ -167,7 +167,7 @@ const CoffeeTab = () => {
                         </ul>
                     </div>
                     <div>
-                        <div className="px-4 py-5 flex-auto">
+                        <div className="py-5 flex-auto">
                             <div style={{ backgroundImage: `url(${'/others/menu_logo.png'})` }} className="bg-center bg-contain bg-no-repeat bg-[#090C0F] p-10" >
                                 <div className={openTab === 1 ? "grid md:grid-cols-2 gap-10" : "hidden"} id="link1" >
                                     {

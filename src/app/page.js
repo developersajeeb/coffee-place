@@ -29,7 +29,7 @@ const Page = () => {
               <h4>Quis autem vel eum iure reprehenderit in ealuptate velit esse molestiae</h4>
             </div>
           </div>
-          <div className='mt-10 md:mt-0' data-aos="fade-left">
+          <div className='mt-10 md:mt-0' data-aos="zoom-in">
             <Image src='/others/about_img.png' alt='About Image' width={600} height={600}></Image>
           </div>
         </div>
@@ -73,21 +73,21 @@ const Page = () => {
       </section>
 
       <section className='bg-color-second px-5 py-16 md:px-32 md:py-20 grid md:grid-cols-3 gap-12'>
-        <div className='text-white text-center md:text-start md:flex items-center gap-6' data-aos="zoom-out" data-aos-delay="100">
+        <div className='text-white text-center md:text-start md:flex items-center' data-aos="zoom-in-up" data-aos-delay="100">
           <h2 className='text-color text-6xl'>256+</h2>
           <div className='mt-4 md:mt-0'>
             <h3 className='text-xl'>Premium Clients</h3>
             <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde</p>
           </div>
         </div>
-        <div className='text-white text-center md:text-start md:flex items-center gap-6' data-aos="zoom-out" data-aos-delay="200">
+        <div className='text-white text-center md:text-start md:flex items-center' data-aos="zoom-in-up" data-aos-delay="200">
           <h2 className='text-color text-6xl'>362+</h2>
           <div className='mt-4 md:mt-0'>
             <h3 className='text-xl'>Expert Members</h3>
             <p className='text-gray-400 mt-2'>Sed ut perspiciatis unde</p>
           </div>
         </div>
-        <div className='text-white text-center md:text-start md:flex items-center gap-6 ' data-aos="zoom-out" data-aos-delay="300">
+        <div className='text-white text-center md:text-start md:flex items-center gap-6 ' data-aos="zoom-in-up" data-aos-delay="300">
           <h2 className='text-color text-6xl'>753+</h2>
           <div className='mt-4 md:mt-0'>
             <h3 className='text-xl'>Winning Awards</h3>
