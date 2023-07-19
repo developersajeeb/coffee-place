@@ -46,7 +46,7 @@ const Navbar = () => {
                         <span className="relative text-sm">BOOK A TABLE</span>
                     </button>
                 </div>
-                <ul className={`text-white p-10 pt-3 grid gap-5 w-full text-center bg-[#0E1317] md:hidden absolute duration-500 z-10 ${isOpen ? 'right-0 top-[75px]' : 'right-0 -top-96'}`}>
+                <ul className={`text-white p-10 pt-3 grid gap-5 w-full text-center bg-[#0E1317] md:hidden absolute duration-500 z-10 ${isOpen ? 'right-0 top-[70px]' : 'right-0 -top-96'}`}>
                     <Link href='/' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-white'}>
                         <li>Home</li>
                     </Link>
