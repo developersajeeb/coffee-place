@@ -23,7 +23,7 @@ const Service = () => {
                         <p className='text-color'>WHAT WE DO</p>
                         <h2 className='text-4xl my-5 font-semibold'>Coffee Place Services Two</h2>
                     </div>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-30'>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-12'>
                         <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
@@ -51,7 +51,7 @@ const Service = () => {
                             <h3 className="text-xl mt-3">Fast Food</h3>
                             <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
                         </div>
-                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="400">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
                                     <FaFish size={45} />
@@ -60,7 +60,7 @@ const Service = () => {
                             <h3 className="text-xl mt-3">Sea Food</h3>
                             <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
                         </div>
-                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="500">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
                                     <FaPizzaSlice size={45} />
@@ -69,7 +69,7 @@ const Service = () => {
                             <h3 className="text-xl mt-3">Pizza</h3>
                             <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
                         </div>
-                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="600">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
                                     <FaGlassCheers size={45} />
@@ -78,7 +78,7 @@ const Service = () => {
                             <h3 className="text-xl mt-3">Drinks</h3>
                             <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
                         </div>
-                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="700">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
                                     <FaMugHot size={45} />
@@ -87,7 +87,7 @@ const Service = () => {
                             <h3 className="text-xl mt-3">Coffee</h3>
                             <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
                         </div>
-                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
+                        <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="800">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
                                     <FaSeedling size={45} />
