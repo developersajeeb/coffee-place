@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Services from '../components/Services/Services';
 import { FaCookie, FaCarrot, FaHamburger, FaFish, FaPizzaSlice, FaGlassCheers, FaMugHot, FaSeedling } from "react-icons/fa";
+import Image from 'next/image';
 
 const Service = () => {
     return (
@@ -94,6 +95,51 @@ const Service = () => {
                                 </div>
                             </div>
                             <h3 className="text-xl mt-3">Vegetables</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='px-5 py-16 md:px-32 md:py-28 bg-color-second'>
+                    <div className='text-center text-white mb-16' data-aos="zoom-in">
+                        <p className='text-color'>OUR AWESOME</p>
+                        <h2 className='text-4xl my-5 font-semibold'>Coffee Place Services Three</h2>
+                    </div>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-12 bg-black py-12 md:p-14'>
+                        <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-8 inline-block rounded-full">
+                                    <Image src='/icon/service_icon1.png' alt='Service Icon' className='w-14 h-14' width={52} height={60} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Birthday Cakes</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center" data-aos="zoom-in" data-aos-delay="200">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-8 inline-block rounded-full">
+                                    <Image src='/icon/service_icon2.png' alt='Service Icon' className='w-14 h-14' width={65} height={150} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Fresh Foods</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center" data-aos="zoom-in" data-aos-delay="300">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-8 inline-block rounded-full">
+                                    <Image src='/icon/service_icon3.png' alt='Service Icon' className='w-14 h-14' width={65} height={150} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Skills Chefs</h3>
+                            <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
+                        </div>
+                        <div className="text-center" data-aos="zoom-in" data-aos-delay="400">
+                            <div className="flex justify-center md:block">
+                                <div className="text-color bg-color-second p-8 inline-block rounded-full">
+                                    <Image src='/icon/service_icon4.png' alt='Service Icon' className='w-14 h-14' width={40} height={40} />
+                                </div>
+                            </div>
+                            <h3 className="text-xl mt-3">Organic Juice</h3>
                             <p className="text-gray-400 mt-2">Sed ut perspiciatis unde</p>
                         </div>
                     </div>
