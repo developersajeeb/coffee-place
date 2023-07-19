@@ -24,7 +24,7 @@ const Service = () => {
                         <p className='text-color'>WHAT WE DO</p>
                         <h2 className='text-4xl my-5 font-semibold'>Coffee Place Services Two</h2>
                     </div>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-12'>
+                    <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12'>
                         <div className="text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
                             <div className="flex justify-center md:block">
                                 <div className="text-color bg-color-second p-4 inline-block rounded-lg ">
