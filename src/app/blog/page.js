@@ -54,11 +54,11 @@ const Blog = () => {
                         </div>}
                     </div>
                     <div>
-                        <div className='relative'>
+                        <div className='relative' data-aos="zoom-in-up" data-aos-delay="100">
                             <input className='border border-gray-700 bg-transparent p-4 w-full rounded-md' placeholder='Search' type="text" name="search" id="search" />
                             <span className='absolute top-5 right-5 cursor-pointer'><FaSearch size={18} /></span>
                         </div>
-                        <div className='border border-gray-700 p-8 mt-8 rounded-md'>
+                        <div className='border border-gray-700 p-8 mt-8 rounded-md' data-aos="zoom-in-up" data-aos-delay="200">
                             <h3 className='text-color text-2xl'>Categories</h3>
                             <dl className='mt-4 grid gap-3'>
                                 <dd className='hover:text-[#B99272] cursor-pointer duration-300'>Sea Food (1)</dd>
@@ -67,7 +67,7 @@ const Blog = () => {
                                 <dd className='hover:text-[#B99272] cursor-pointer duration-300'>Guides (5)</dd>
                             </dl>
                         </div>
-                        <div className='border border-gray-700 p-8 mt-8 rounded-md'>
+                        <div className='border border-gray-700 p-8 mt-8 rounded-md' data-aos="zoom-in-up" data-aos-delay="300">
                             <h3 className='text-color text-2xl'>Recent Posts</h3>
                             <dl className='mt-4 grid gap-3'>
                                 <dd className='hover:text-[#B99272] cursor-pointer duration-300'>For most people, moderate coffee consumption</dd>
@@ -75,7 +75,7 @@ const Blog = () => {
                                 <dd className='hover:text-[#B99272] cursor-pointer duration-300'>Coffee with added milk provides all</dd>
                             </dl>
                         </div>
-                        <div className='border border-gray-700 p-8 mt-8 rounded-md'>
+                        <div className='border border-gray-700 p-8 mt-8 rounded-md' data-aos="zoom-in-up" data-aos-delay="400">
                             <h3 className='text-color text-2xl'>Tag Cloud</h3>
                             <div className='flex flex-wrap gap-2 mt-4'>
                                 <span className='bg-gray-800 py-2 px-3 rounded-md text-gray-200 cursor-pointer hover:bg-[#B99272] hover:text-white duration-300'>coffee</span>
@@ -90,7 +90,7 @@ const Blog = () => {
                                 <span className='bg-gray-800 py-2 px-3 rounded-md text-gray-200 cursor-pointer hover:bg-[#B99272] hover:text-white duration-300'>ice-cream</span>
                             </div>
                         </div>
-                        <div className='border border-gray-700 p-8 mt-8 rounded-md'>
+                        <div className='border border-gray-700 p-8 mt-8 rounded-md' data-aos="zoom-in-up" data-aos-delay="500">
                             <h3 className='text-color text-2xl'>Archives List</h3>
                             <dl className='mt-4 grid gap-3'>
                                 <dd className='hover:text-[#B99272] cursor-pointer duration-300'>November 2023 (1)</dd>
@@ -101,7 +101,7 @@ const Blog = () => {
                                 <dd className='hover:text-[#B99272] cursor-pointer duration-300'>Jun 2023 (5)</dd>
                             </dl>
                         </div>
-                        <div className='border border-gray-700 p-8 mt-8 rounded-md'>
+                        <div className='border border-gray-700 p-8 mt-8 rounded-md' data-aos="zoom-in-up" data-aos-delay="600">
                             <h3 className='text-color text-2xl'>Archives List</h3>
                             <dl className='mt-4 grid gap-3'>
                                 <dd className='text-gray-400'><span className='text-white hover:text-[#B99272] cursor-pointer duration-300'>Sajeeb</span> on <span className='text-white hover:text-[#B99272] cursor-pointer duration-300'>How to access canva pro account</span></dd>
